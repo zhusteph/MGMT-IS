@@ -1,0 +1,52 @@
+ {
+	"responsive": true,
+	"glyph-icons": true,
+	"enableEditorJS": true,
+	"plugins": [
+		{
+			"name": "navpane",
+			"condense": 1024,
+			"defaults": {
+				"forced": true
+			}
+		}
+	],
+	"description": "Venue is a contemporary theme that's perfect for anyone looking to make a big first impression. With unique color palettes and full screen header images Venue sets a strong creative tone for you to build unique content and assert your own voice.",
+	"features": [
+		"responsive",
+		"css-buttons",
+		"social-icons",
+		"full-width-header",
+		"navigation-collapsible",
+		"color-palettes"
+	],
+	"variations": [
+		{
+			"value": "v4",
+			"sample": "#ae4340",
+			"is-dark": false
+		},
+		{
+			"value": "v2",
+			"sample": "#a38497",
+			"is-dark": false
+		},
+		{
+			"value": "v3",
+			"sample": "#20639c",
+			"is-dark": false
+		},
+		{
+			"value": "v1",
+			"sample": "#cca744",
+			"is-dark": false
+		}
+	],
+	"page-types": {
+		"landing": {
+			"header-section": {
+				"resizable": false
+			}
+		}
+	}
+}

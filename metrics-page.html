@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Metrics Page - Language Bias Metrics</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1492675268" title="wsite-theme-css" />
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Pacifico&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Varela&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Times New Roman" !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#818181 !important;}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Open Sans" !important;font-weight:300 !important;text-transform:  none !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#4a7a75 !important;}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {font-family:"Varela" !important;font-weight: bold !important;}
+.wsite-not-footer h2.wsite-content-title a, .wsite-not-footer .paragraph a, .wsite-not-footer blockquote a, #blogTable .blog-sidebar a, #blogTable .blog-comments a, #blogTable .blog-comments-bottom a, #wsite-com-store a, #wsite-com-product-gen a {color:#d5d5d5 !important;}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-family:"Open Sans" !important;font-weight:300 !important;font-style:normal !important;text-transform:  none !important;letter-spacing: 0px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-family:"Lora" !important;}
+.wsite-button-inner {font-family:"Lato" !important;font-weight:700 !important;letter-spacing: 1px !important;}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+.wsite-not-footer h2.wsite-content-title a:hover, .wsite-not-footer .paragraph a:hover, .wsite-not-footer blockquote a:hover, #blogTable .blog-sidebar a:hover, #blogTable .blog-comments a:hover, #blogTable .blog-comments-bottom a:hover, #wsite-com-store a:hover, #wsite-com-product-gen a:hover {color:#818181 !important;}
+.wsite-button-small .wsite-button-inner {font-size:12px !important;}
+.wsite-button-large .wsite-button-inner {font-size:12px !important;}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:30px !important;line-height:39px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-size:70px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-size:21px !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+<style>
+.wsite-background {background-image: url("/uploads/4/7/1/3/47135771/background-images/391317221.jpg") !important;background-repeat: no-repeat !important;background-position: 50% 50% !important;background-size: 100% !important;background-color: transparent !important;background: inherit;}
+body.wsite-background {background-attachment: fixed !important;}.wsite-background.wsite-custom-background{ background-size: cover !important}
+</style>
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = {"navpane":{"condense":1024,"forced":1}};</script><script src='http://cdn2.editmysite.com/js/site/theme-plugins.js?buildTime=1234'></script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"275386589834081819","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"530942865698214033","title":"Information","url":"information.html","target":"","nav_menu":false,"nonclickable":false},{"id":"598666795696879875","title":"Document Submission Page","url":"document-submission-page.html","target":"","nav_menu":false,"nonclickable":false}],
+			"632808239244322173",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{"hasCustomMinicart":true}
+		)
+	}
+//-->
+</script>
+		
+		
+</head>
+
+<body class="header-page  wsite-page-metrics-page  wsite-theme-light"><div class="wrapper">
+	<div class="page-content w-navpane-slide">
+		<div id="background">
+			<div id="header">
+				<div class="container">
+					<div id="logo">
+						<span class="wsite-logo"><a href=""><span id="wsite-title">Language Bias Metrics</span></a>
+						</span>
+					</div>
+					
+					<div id="nav-handle">
+						<div class="w-navpane-trigger hamburger">
+							<span class="mobile">Menu</span>
+						</div>		
+					</div>
+
+				</div>
+			</div>
+			
+			<div class="wsite-elements wsite-not-footer wsite-header-elements">
+				<div class="wsite-section-wrap">
+					<div  class="wsite-section wsite-header-section wsite-section-bg-image" style="height: 178px;background-image: url(&quot;/uploads/4/7/1/3/47135771/background-images/1389374582.png&quot;) ;background-repeat: no-repeat ;background-position: 50% 50% ;background-size: 100% ;background-color: transparent ;background-size: cover;" >
+						<div class="wsite-section-content">
+			
+							<div id="banner-wrap">
+								<div id="gradient">
+									<div class="container">
+										<div id="banner">
+											<div class="wsite-section-elements">
+												<h2 class="wsite-content-title" style="text-align:left;"><font size="5">How does your document measure up against bias metrics?</font></h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="main">
+			<!-- tabs -->
+			<div class="tab">
+				<button class="tablinks" onclick="openTab(event, 'tab1')"><h4>Pronoun Usage</h4></button>
+				<button class="tablinks" onclick="openTab(event, 'tab2')"><h4>Communal & Agentic Words</h4></button>
+				<button class="tablinks" onclick="openTab(event, 'tab3')"><h4>Hedging Words</h4></button>
+			</div>
+
+			<div id="tab1" class="tabcontent" display="none">
+				<br>
+				<h3>Pronoun Usage</h3>
+				<br>
+				<p class="text-display" id="tab1-text"></p>
+			</div>
+
+			<div id="tab2" class="tabcontent" display="none">
+				<br>
+				<h3>Communal & Agentic Words</h3>
+				<br>
+				<p class="text-display" id="tab2-text"></p>
+			</div>
+
+			<div id="tab3" class="tabcontent" display="none">
+				<br>
+				<h3>Hedging Words</h3>
+				<br>
+				<p class="text-display" id="tab3-text"></p>
+			</div>
+		</div>
+
+
+
+		<div id="main">
+
+			<div class="container" style="padding-top: none; padding-left: 12px; padding-right:12px">
+				<div class="wsite-section-elements text-display" id = "Research-Background" style="font-weight:400;-webkit-font-smoothing:antialiased; font-size:16px;font-family: 'Oxygen'">
+					
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="desktop-nav" class="w-navlist nav">
+		<div class="nav-wrap">
+			<ul class="wsite-menu-default">
+				<li id="pg275386589834081819" class="wsite-menu-item-wrap"><a href="index.html" class="wsite-menu-item">Home</a>
+				</li>
+				<li id="pg530942865698214033" class="wsite-menu-item-wrap"><a href="information.html"class="wsite-menu-item">Information</a>
+				</li>
+				<li id="pg530942865698214033" class="wsite-menu-item-wrap"><a href="citations.html"class="wsite-menu-item">Resources</a>
+				</li>
+			</ul>
+		</div>
+			
+		<div class="social">
+		</div>
+	</div>
+
+	<div id="nav" class="w-navpane nav w-navpane-slide">
+		<div class="nav-wrap">
+			<ul class="wsite-menu-default">
+				<li id="pg275386589834081819" class="wsite-menu-item-wrap"><a href="index.html" class="wsite-menu-item">Home</a>
+				</li>
+				<li id="pg530942865698214033" class="wsite-menu-item-wrap"><a href="information.html"class="wsite-menu-item">Information</a>
+				</li>
+				<li id="pg530942865698214033" class="wsite-menu-item-wrap"><a href="citations.html"class="wsite-menu-item">Resources</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="files/theme/plugins.js"></script>
+	<script type="text/javascript" src="files/theme/custom.js"></script>
+	<script type="text/javascript" src="files/theme/mobile.js"></script>
+	
+	<!--transition between buttons-->
+	<script>
+
+		function openTab(evt, tabnum) {
+		    // Declare all variables
+		    var i, tabcontent, tablinks, textboxid, textdiv;
+		    var key = {};
+		    key.female_pronouns = ["hers", "her", "she", "herself"];
+		    key.male_pronouns = ["himself", "his", "he", "him"];
+		    key.communal_words = ["adequate", "affectionate", "affection", "agreeableness", "agreeable", "attached", "attach", "babies", "brothers", "brother", "caring", "care", "children", "child", "colleagues", "colleague", "collaboration", "collaborate", "commitment", "committed", "commit", "communal", "community", "competentence", "competent", "connected", "connect", "considerate", "consideration", "conscientiousness", "conscientious", "cooperative", "cooperation", "dependable", "efforts", "effort", "empathetic", "empathy", "good", "family", "fine", "friendly", "hardworking", "helpful", "hard-working", "hard working", "husband", "industrious", "interpersonal", "kids", "kindness", "kinship", "kind", "niceness", "nice", "nurture", "nurturing", "reliable", "satisfactory", "sensitive", "sensitivity", "sisters", "sister", "solid", "sympathetic", "sympathy", "tactfulness", "tactful", "tact", "thoughtful",  "together", "warmth", "warm", "wife"];
+		    key.agentic_words = ["achievements", "achievement", "ambitiousness", "ambitions", "ambition", "ambitious", "aggressiveness", "assertive", "assertiveness", "assertive", "best", "competitive", "competition", "confident", "confidence", "daring", "decisiveness", "decisive", "dominant", "do", "earns", "earning", "earn", "extraordinary", "exceptional", "excellent", "finest", "forceful", "gain", "headstrong", "impressed", "impress", "independent", "independence", "individualistic", "insightful", "insights", "insight", "intellectual", "intellect", "knows", "know", "obtain", "outstanding", "outspoken", "outgoing", "remarkable", "risky", "risk", "self-sufficient", "skilled", "skills", "skill", "stellar", "strong-willed", "superb", "superior", "talented", "talent", "think", "unmatched", "unparalleled"];
+		    key.hedging_words = ["appears", "appear", "assumes", "assume", "believes", "believe", "but", "can", "conceivably", "conceivable", "could", "doubts", "doubt", "however", "indicates", "indicate", "likely", "maybe", "may", "might", "nevertheless", "oftentimes", "oftentime", "often", "perhaps", "possibly", "possible", "pretty", "probably", "probable", "seems", "seem", "sometimes", "sometime", "somewhat", "suggests", "suggest", "typically", "tends", "tend", "thinks", "think", "though", "usually", "while"];
+
+		    key.tabnum = tabnum;
+
+		    // Get all elements with class="tabcontent" and hide them
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+
+		    // Get all elements with class="tablinks" and remove the class "active"
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+
+		    // Show the current tab, and add an "active" class to the button that opened the tab
+		    document.getElementById(tabnum).style.display = "block";
+		    evt.currentTarget.className += " active";
+
+
+		    if (tabnum == "tab1") {
+		    	document.getElementById("Research-Background").innerHTML = "<h3>Research Background</h3><br><p>While the use of pronouns is often dictated by gender, the use of generic pronouns for hypothetical situations or in referencing any person whose gender is undetermined or ambiguous can serve to reinforce biases. In a study of undergraduate students, it was found that the word “he” tended to bias the listener to imagine male subjects. In company communications, this can quickly develop an unconscious undercurrent of preference towards males in the company. </p><p>This metric is applicable to public remarks/speeches, and press releases, since these forms of communication tend to contain more examples and hypotheticals. Counting pronouns in recommendation letters or reviews may be misleading, given that these communication forms are written about a specific individual.</p>";
+		    }
+		    else if (tabnum == "tab2") {
+		    	document.getElementById("Research-Background").innerHTML = "<h3>Research Background</h3><p>In written communications, women’s accomplishments and strengths are often portrayed in a more communal light, whereas men’s accomplishments and strengths are portrayed in a more agentic light. The continued divergence of communal and agentic language can serve to reinforce the stigma against independent and strong-willed women, and caring and nurturing men. Resources like <a href=\"https://textio.com/\">TextIO</a> exist to reduce the gendered use of these types of adjectives/nouns in job applications to increase the frequency of an underrepresented gender, but this difference in language usage is still visible in how men and women are described in other contexts as well, so it is useful to highlight here. </p><p>This metric is applicable to all three communication forms analyzed here (recommendation letters/reviews, public remarks/speeches, and press releases), since communal and agentic words are descriptors for individuals and all three communication types are likely to describe both men and women.</p>";
+		    }
+		    else if (tabnum == "tab3") {
+		    	document.getElementById("Research-Background").innerHTML = "<h3>Research Background</h3><p>Hedging language is used to express some uncertainty in the statements and ideas being communicated. It can soften statements and assertions, and in most contexts, is not used insidiously. However, research done on the language used in recommendation letters overwhelmingly supports the notion that hedging language is used more often in recommendation letters describing women than those of men.</p><p>This metric is most applicable to recommendation letters and performance reviews, given that hedging language resulting from gender bias is most salient here of the three communication forms analyzed. Otherwise, hedging language is not inherently bad when used in contexts outside of describing individuals, since it is often used to moderate statements.</p>";
+		    }
+		    else {}
+
+		    $(document).ready(function () { //get IP address for key
+		    $.getJSON("http://jsonip.com/?callback=?", function (data) {
+		    	var newstring, referencestring, textboxid, textdiv, wordcolor, doctype;
+		        console.log(data);
+		        newstring = localStorage.getItem(data.ip);
+		        referencestring = localStorage.getItem(data.ip);
+		        doctype = localStorage.getItem(data.ip + "radiovalue");
+
+		        key.newstring = localStorage.getItem(data.ip);
+
+		        textboxid = (key.tabnum).concat("-text");
+			    textdiv = document.getElementById(textboxid);
+
+			    textdiv.innerHTML = "";
+
+			    while (newstring.length > 0) {
+
+			    	var i, first_appearance, first_word;
+			    	first_appearance = -1;
+
+			    	if ((key.tabnum == "tab1" && doctype == "1") || (key.tabnum == "tab3" && doctype == "2") || (key.tabnum == "tab3" && doctype == "3")) {
+			    		textdiv.innerHTML = "Not Applicable";
+			    		break;
+			    	}
+
+			    	if (key.tabnum == "tab1") {
+			    		for (i = 0; i < key.female_pronouns.length; i++) {
+			    			if ((first_appearance < 0 || first_appearance > newstring.indexOf(key.female_pronouns[i])) && (newstring.indexOf(key.female_pronouns[i]) >= 0)) {
+			    				first_appearance = newstring.indexOf(key.female_pronouns[i]);
+			    				first_word = key.female_pronouns[i];
+			    				wordcolor = "red";
+			    			}
+			    		}
+
+			    		for (i = 0; i < key.male_pronouns.length; i++) {
+			    			if ((first_appearance < 0 || first_appearance > newstring.indexOf(key.male_pronouns[i])) && (newstring.indexOf(key.male_pronouns[i]) >= 0)) {
+			    				first_appearance = newstring.indexOf(key.male_pronouns[i]);
+			    				first_word = key.male_pronouns[i];
+			    				wordcolor = "purple";
+			    			}
+			    		}
+			    	}
+			    	else if (key.tabnum == "tab2") {
+			    		for (i = 0; i < key.communal_words.length; i++) {
+			    			if ((first_appearance < 0 || first_appearance > newstring.indexOf(key.communal_words[i])) && (newstring.indexOf(key.communal_words[i]) >= 0)) {
+			    				first_appearance = newstring.indexOf(key.communal_words[i]);
+			    				first_word = key.communal_words[i];
+			    				wordcolor = "red";
+			    			}
+			    		}
+			    		for (i = 0; i < key.agentic_words.length; i++) {
+			    			if ((first_appearance < 0 || first_appearance > newstring.indexOf(key.agentic_words[i])) && (newstring.indexOf(key.agentic_words[i]) >= 0)) {
+			    				first_appearance = newstring.indexOf(key.agentic_words[i]);
+			    				first_word = key.agentic_words[i];
+			    				wordcolor = "purple";
+			    			}
+			    		}
+
+			    	}
+			    	else if (key.tabnum == "tab3") {
+			    		for (i = 0; i < key.hedging_words.length; i++) {
+			    			if ((first_appearance < 0 || first_appearance > newstring.indexOf(key.hedging_words[i])) && (newstring.indexOf(key.hedging_words[i]) >= 0)) {
+			    				first_appearance = newstring.indexOf(key.hedging_words[i]);
+			    				first_word = key.hedging_words[i];
+			    				wordcolor = "red";
+			    			}
+			    		}
+			    	}
+
+			    	if (first_appearance >= 0) {
+			    		var charBefore, charAfter, indexStart, indexEnd;
+
+
+			    		indexStart = newstring.indexOf(first_word);
+			    		indexEnd = newstring.indexOf(first_word) + first_word.length - 1;
+
+
+			    		//start
+			    		if (indexStart == 0) {
+			    			charBefore = -1;
+			    			if ((indexEnd+1) == newstring.length) {
+			    				charAfter = -1;
+			    			}
+			    			else {
+			    				charAfter = newstring.charCodeAt(indexEnd + 1);
+			    			}
+			    		}
+			    		//end
+			    		else if ((indexEnd+1) == newstring.length) {
+			    			charBefore = newstring.charCodeAt(indexStart - 1);
+			    			charAfter = -1;
+			    		}
+			    		//middle
+			    		if (indexStart > 0 && (indexEnd+1) < newstring.length) {
+			    			charBefore = newstring.charCodeAt(indexStart - 1);
+			    			charAfter = newstring.charCodeAt(indexEnd + 1);
+			    		}
+
+			    		//addint everything before
+			    		textdiv.innerHTML = textdiv.innerHTML + referencestring.substring(0, indexStart);
+
+			    		//adding color
+			    		if ((charBefore<97 || charBefore >122) && (charAfter<97 || charAfter >122)) {
+			    			textdiv.innerHTML = textdiv.innerHTML + "<em style =\"color:" + wordcolor + "\">" + referencestring.substring(indexStart, indexEnd + 1) + "</em>";
+			    		}
+			    		else {
+			    			textdiv.innerHTML = textdiv.innerHTML + newstring.substring(indexStart, indexEnd + 1);
+			    		}
+
+			    		newstring = newstring.substring(indexEnd + 1, newstring.length);
+			    		referencestring = referencestring.substring(indexEnd + 1, referencestring.length);
+
+			    	}
+			    	else {
+
+			    		textdiv.innerHTML = textdiv.innerHTML + referencestring;
+
+			    		break;
+			    	}
+			    }
+
+
+		    	});
+			});
+
+		}
+
+
+	</script>
+		
+	</body>
+</html>
